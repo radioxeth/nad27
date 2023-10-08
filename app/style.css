@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h2,
+h3 {
+    color: #444;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-list li {
+    padding: 8px 12px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px;
+}
