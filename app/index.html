@@ -5,222 +5,247 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dan Shannon</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        h2,
-        h3 {
-            color: #444;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul class="nav-list">
-            <li><a href="#">Website 1</a></li>
-            <li><a href="#">Website 2</a></li>
-            <li><a href="#">Website 3</a></li>
-            <li><a href="#">Website 4</a></li>
-        </ul>
-    </nav>
-    <h1>Dan Shannon</h1>
-    <section>
-        <h2>About</h2>
-        <ul>
-            <li>
-                Location: <a href="https://www.google.com/maps/place/Denver,+CO/@39.7643389,-104.8551114,11z">Denver,
-                    CO USA</a> | Remote
-            </li>
-            <li>
-                Contact: <a href="mailto:radiox@nad27.net">radiox@nad27.net</a>
-            </li>
-            <li>
-                github: <a href="https://github.com/radioxeth">@radioxeth</a>
-            </li>
-            <li>
-                LinkedIn: <a href="https://www.linkedin.com/in/djshannon/">@djshannon</a>
-            </li>
-        </ul>
-        <p>
-            Hi, call me Dan! I am currently a Senior Software Engineer at Enverus working on mostly frontend React
-            applications. I have over 10 years of experience developing web applications and working on different parts
-            of the stack. I consider myself a full-stack developer, but recently I have enjoyed focusing on frontend
-            work and security. I want to solve problems and build applications with a security-oriented mindset.
-        </p>
-        <p>
-            To better understand how computers and the internet work through the lens of security, I am earning a
-            Master of Science in Cybersecurity from Syracuse University. While I foresee SaaS and web development as a
-            career, I am trying to bridge the hardware-software interface out of my own curiosity. I have a Bachelor
-            of Science in Geophysical Engineering, with a minor in Computational and Applied Mathematics, and an area of
-            special interest in Space and Planetary Science and Engineering. This background has enabled me to gain
-            skills in web development, GIS (Geographic Information Systems), data visualization, privacy, and security.
-        </p>
-        <p>
-            I believe that Diversity, Equity, and Inclusion are crucial to a successful business and way of living life.
-            Every day I strive to live a more diverse life and be more inclusive. I have been a member of the DEI
-            committee at Enverus for the past two years where we have worked on improving diversity in hiring,
-            implementing mentorship programs, and celebrating diversity within our organization. For any role I take in
-            the future, it is important to me that we can work to improve or implement DEI initiatives.
-        </p>
-        <p>
-            Some technologies I like to play with in my spare time include:
-        <ul>
-            <li>Decentralized technologies/cryptocurrency</li>
-            <li>IPFS (InterPlanetary File System)</li>
-            <li>Digital Art and Music <a href="https://opensea.io/radiox.eth">https://opensea.io/radiox.eth</a></li>
-            <li>Geographic Information Systems</li>
-            <li>Working on my Amateur Radio license</li>
-        </ul>
-        </p>
-    </section>
-    <hr>
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Full-stack web development, software engineering</li>
-            <li>Data structures, algorithms, leadership</li>
-            <li>JavaScript, TypeScript, React, NodeJS, Python, C#, .NET Core, C, SQL, MongoDB, Jest, git</li>
-            <li>Mac OS, Windows, Linux, CI/CD</li>
-            <li>Computer security, network security, SaaS, GIS</li>
-        </ul>
-    </section>
-    <hr>
-    <section>
-        <h2>Professional Experience</h2>
+    <div class="menu-container" title="menu">
+        <button class="hamburger-menu" onclick="toggleMenu()">
+            &#9776;
+        </button>
+        <nav class="menu hidden">
+            <a target="_blank" title="Compass App" href="https://compass.nad27.net">Compass</a>
+        </nav>
+    </div>
+    <div class="resume">
+        <h1>Dan Shannon</h1>
+        <section>
+            <table style="border-collapse: collapse;">
+                <tr>
+                    <td style="border: none;">Location</td>
+                    <td style="border: none;">:</td>
+                    <td style="border: none;"><a
+                            href="https://www.google.com/maps/place/Denver,+CO/@39.7643389,-104.8551114,11z">Denver, CO
+                            USA</a> | Remote</td>
+                </tr>
+                <tr>
+                    <td style="border: none;">Contact</td>
+                    <td style="border: none;">:</td>
+                    <td style="border: none;"><a href="mailto:radiox@nad27.net">radiox@nad27.net</a></td>
+                </tr>
+                <tr>
+                    <td style="border: none;">GitHub</td>
+                    <td style="border: none;">:</td>
+                    <td style="border: none;"><a href="https://github.com/radioxeth">@radioxeth</a></td>
+                </tr>
+                <tr>
+                    <td style="border: none;">LinkedIn</td>
+                    <td style="border: none;">:</td>
+                    <td style="border: none;"><a href="https://www.linkedin.com/in/djshannon/">@djshannon</a></td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+        <section>
+            <h2>About</h2>
+            <p>
+                Hi, call me Dan! I am currently a Senior Software Engineer at Enverus working on mostly frontend React
+                applications. I have over 10 years of experience developing web applications and working on different
+                parts
+                of the stack. I consider myself a full-stack developer, but recently I have enjoyed focusing on frontend
+                work and security. I want to solve problems and build applications with a security-oriented mindset.
+            </p>
+            <p>
+                To better understand how computers and the internet work through the lens of security, I am earning a
+                Master of Science in Cybersecurity from Syracuse University. While I foresee SaaS and web development as
+                a
+                career, I am trying to bridge the hardware-software interface out of my own curiosity. I have a Bachelor
+                of Science in Geophysical Engineering, with a minor in Computational and Applied Mathematics, and an
+                area of
+                special interest in Space and Planetary Science and Engineering. This background has enabled me to gain
+                skills in web development, GIS (Geographic Information Systems), data visualization, privacy, and
+                security.
+            </p>
+            <p>
+                I believe that Diversity, Equity, and Inclusion are crucial to a successful business and way of living
+                life.
+                Every day I strive to live a more diverse life and be more inclusive. I have been a member of the DEI
+                committee at Enverus for the past two years where we have worked on improving diversity in hiring,
+                implementing mentorship programs, and celebrating diversity within our organization. For any role I take
+                in
+                the future, it is important to me that we can work to improve or implement DEI initiatives.
+            </p>
+            <p>
+                Some technologies I like to play with in my spare time include:
+            <ul>
+                <li>Decentralized technologies/cryptocurrency</li>
+                <li>IPFS (InterPlanetary File System)</li>
+                <li>Digital Art and Music <a href="https://opensea.io/radiox.eth">https://opensea.io/radiox.eth</a></li>
+                <li>Geographic Information Systems</li>
+                <li>Working on my Amateur Radio license</li>
+            </ul>
+            </p>
+        </section>
+        <hr>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Full-stack web development, software engineering</li>
+                <li>Data structures, algorithms, leadership</li>
+                <li>JavaScript, TypeScript, React, NodeJS, Python, C#, .NET Core, C, SQL, MongoDB, Jest, git</li>
+                <li>Mac OS, Windows, Linux, CI/CD</li>
+                <li>Computer security, network security, SaaS, GIS</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2>Professional Experience</h2>
 
-        <h3>Enverus | Centennial, CO | Remote (2017 - present) full-time</h3>
+            <h3>Enverus | Centennial, CO | Remote (2017 - present) full-time</h3>
 
-        <h4>Senior Software Engineer (2022-present)</h4>
-        <ul>
-            <li>Contributed heavily to Forecast Studio's greenfield development.</li>
-            <li>Enhance and enable ESG datasets with over 2 million rows.</li>
-            <li>Deploy microservices to Kubernetes orchestrated sandboxes.</li>
-            <li>Implement ETL process for datasets in the distributed database, Kinetica.</li>
-            <li>Mentor and guide fellow developers; regularly engage in paired programming.</li>
-            <li>Write integration and unit tests with React Testing Library and Jest.</li>
-            <li>Implement/enforce account roles, permissions, and feature gates for features and applications.</li>
-        </ul>
+            <h4>Senior Software Engineer (2022-present)</h4>
+            <ul>
+                <li>Contributed heavily to Forecast Studio's greenfield development.</li>
+                <li>Enhance and enable ESG datasets with over 2 million rows.</li>
+                <li>Deploy microservices to Kubernetes orchestrated sandboxes.</li>
+                <li>Implement ETL process for datasets in the distributed database, Kinetica.</li>
+                <li>Mentor and guide fellow developers; regularly engage in paired programming.</li>
+                <li>Write integration and unit tests with React Testing Library and Jest.</li>
+                <li>Implement/enforce account roles, permissions, and feature gates for features and applications.</li>
+            </ul>
 
-        <h4>Software Engineer (2021-2022)</h4>
-        <ul>
-            <li>Developed the frontend, backend, and database schemas for energy forecasting tools.</li>
-            <li>Develop React and .NET Core applications.</li>
-            <li>Guide software design and implementation.</li>
-        </ul>
-        <h3>DrillingInfo* | Littleton, CO (2017 - present) full-time</h3>
-        <p>*<em>In 2020, DrillingInfo merged with RS Energy to form Enverus.</em></p>
-        <h4>Associate Software Engineer (2019-2021)</h4>
-        <ul>
-            <li>Upgraded Prodcast - an oil and gas production forecasting tool, to allow users to forecast 900 unique
-                tiers of oil and gas wells on demand in less than 2 minutes.</li>
-            <li>Developed Daily Gas Flow front and back end as well as the process to ingest 90 days of history for
-                30,0000 meters and blend it with GIS data to update 4 times a day. The ingestion process takes about 5
-                minutes.</li>
-            <li>Deploy containerized applications to Nomad using Jenkins and CI/CD pipelines.</li>
-        </ul>
+            <h4>Software Engineer (2021-2022)</h4>
+            <ul>
+                <li>Developed the frontend, backend, and database schemas for energy forecasting tools.</li>
+                <li>Develop React and .NET Core applications.</li>
+                <li>Guide software design and implementation.</li>
+            </ul>
+            <h3>DrillingInfo* | Littleton, CO (2017 - present) full-time</h3>
+            <p>*<em>In 2020, DrillingInfo merged with RS Energy to form Enverus.</em></p>
+            <h4>Associate Software Engineer (2019-2021)</h4>
+            <ul>
+                <li>Upgraded Prodcast - an oil and gas production forecasting tool, to allow users to forecast 900
+                    unique
+                    tiers of oil and gas wells on demand in less than 2 minutes.</li>
+                <li>Developed Daily Gas Flow front and back end as well as the process to ingest 90 days of history for
+                    30,0000 meters and blend it with GIS data to update 4 times a day. The ingestion process takes about
+                    5
+                    minutes.</li>
+                <li>Deploy containerized applications to Nomad using Jenkins and CI/CD pipelines.</li>
+            </ul>
 
-        <h4>Junior Full Stack Developer (2017-2019)</h4>
-        <ul>
-            <li>Develop Angular and .NET applications. Maintain SQL Server Management Studio databases.</li>
-            <li>Developed the frontend, backend, and database schema for Optiflo Gas - an SPA for forecasting the flow
-                of natural gas through interstate pipelines.</li>
-        </ul>
+            <h4>Junior Full Stack Developer (2017-2019)</h4>
+            <ul>
+                <li>Develop Angular and .NET applications. Maintain SQL Server Management Studio databases.</li>
+                <li>Developed the frontend, backend, and database schema for Optiflo Gas - an SPA for forecasting the
+                    flow
+                    of natural gas through interstate pipelines.</li>
+            </ul>
 
-        <h3>Arcadis | Highlands Ranch, CO (2013 - 2017) full-time</h3>
-        <h4>GIS Specialist (Application Developer)</h4>
-        <ul>
-            <li>Developed 6 GIS management and mapping web applications.</li>
-            <li>Tech stack included ArcGIS, ASP .NET, .NET Core, JavaScript, Angular, JQuery, CoffeeScript, SQL.</li>
-        </ul>
-    </section>
-    <hr>
-    <section>
-        <h2>Education</h2>
+            <h3>Arcadis | Highlands Ranch, CO (2013 - 2017) full-time</h3>
+            <h4>GIS Specialist (Application Developer)</h4>
+            <ul>
+                <li>Developed 6 GIS management and mapping web applications.</li>
+                <li>Tech stack included ArcGIS, ASP .NET, .NET Core, JavaScript, Angular, JQuery, CoffeeScript, SQL.
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2>Education</h2>
 
-        <h3>Syracuse University | Syracuse, NY (2024 expected graduation)</h3>
-        <ul>
-            <li>
-                Master of Science in Cybersecurity | 4.0 GPA
-            </li>
-        </ul>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Cohort</th>
-                    <th>Course</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Fall 2023</strong></td>
-                    <td><a
-                            href="https://github.com/radioxeth/cis-735-machine-learning-for-security/blob/main/README.md#cis-735-machine-learning-for-security"><em>CIS-735
-                                Machine Learning for Security</em></a></td>
-                </tr>
-                <tr>
-                    <td><strong>Summer 2023</strong></td>
-                    <td><em>Leave of Absence</em></td>
-                </tr>
-                <tr>
-                    <td><strong>Spring 2023</strong></td>
-                    <td><a
-                            href="https://github.com/radioxeth/cis-628-cryptography/blob/main/README.md#cis-628-cryptography"><em>CIS-628
-                                Cryptography</em></a></td>
-                </tr>
-                <tr>
-                    <td><strong>Winter 2023</strong></td>
-                    <td><a
-                            href="https://github.com/radioxeth/cis-657-principles-of-operating-systems/blob/main/README.md#cis-657-principles-of-operating-systems"><em>CIS-657
-                                Principles of Operating Systems</em></a></td>
-                </tr>
-                <tr>
-                    <td><strong>Fall 2022</strong></td>
-                    <td><a
-                            href="https://github.com/radioxeth/cse-643-computer-security/blob/main/README.md#cse-643-computer-security"><em>CSE-643
-                                Computer Security</em></a></td>
-                </tr>
-                <tr>
-                    <td><strong>Summer 2022</strong></td>
-                    <td><a
-                            href="https://github.com/radioxeth/cse-644-internet-security/blob/main/README.md#cse-644-internet-security"><em>CSE-644
-                                Internet Security</em></a></td>
-                </tr>
-                <tr>
-                    <td><strong>Spring 2022</strong></td>
-                    <td><a href="https://github.com/radioxeth/cis-675-algorithms"><em>CIS-675 Design and Analysis of
-                                Algorithms</em></a></td>
-                </tr>
-                <tr>
-                    <td><strong>Winter 2022</strong></td>
-                    <td><a href="https://github.com/radioxeth/cps-500-computer-organization-and-os-design"><em>CPS-500
-                                Computer Organization and Operating System Design</em></a></td>
-                </tr>
-                <tr>
-                    <td><strong>Fall 2021</strong></td>
-                    <td><a href="https://github.com/radioxeth/cps-500-programming-and-data-structures"><em>CPS-500
-                                Programming and Data Structures</em></a></td>
-                </tr>
-            </tbody>
-        </table>
+            <h3>Syracuse University | Syracuse, NY (2024 expected graduation)</h3>
+            <ul>
+                <li>
+                    Master of Science in Cybersecurity | 4.0 GPA
+                </li>
+            </ul>
+            <table border="1" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Cohort</th>
+                        <th>Course</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Fall 2023</strong></td>
+                        <td><a
+                                href="https://github.com/radioxeth/cis-735-machine-learning-for-security/blob/main/README.md#cis-735-machine-learning-for-security"><em>CIS-735
+                                    Machine Learning for Security</em></a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Summer 2023</strong></td>
+                        <td><em>Leave of Absence</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Spring 2023</strong></td>
+                        <td><a
+                                href="https://github.com/radioxeth/cis-628-cryptography/blob/main/README.md#cis-628-cryptography"><em>CIS-628
+                                    Cryptography</em></a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Winter 2023</strong></td>
+                        <td><a
+                                href="https://github.com/radioxeth/cis-657-principles-of-operating-systems/blob/main/README.md#cis-657-principles-of-operating-systems"><em>CIS-657
+                                    Principles of Operating Systems</em></a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fall 2022</strong></td>
+                        <td><a
+                                href="https://github.com/radioxeth/cse-643-computer-security/blob/main/README.md#cse-643-computer-security"><em>CSE-643
+                                    Computer Security</em></a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Summer 2022</strong></td>
+                        <td><a
+                                href="https://github.com/radioxeth/cse-644-internet-security/blob/main/README.md#cse-644-internet-security"><em>CSE-644
+                                    Internet Security</em></a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Spring 2022</strong></td>
+                        <td><a href="https://github.com/radioxeth/cis-675-algorithms"><em>CIS-675 Design and Analysis of
+                                    Algorithms</em></a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Winter 2022</strong></td>
+                        <td><a href="https://github.com/radioxeth/cps-500-computer-organization-and-os-design"><em>CPS-500
+                                    Computer Organization and Operating System Design</em></a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fall 2021</strong></td>
+                        <td><a href="https://github.com/radioxeth/cps-500-programming-and-data-structures"><em>CPS-500
+                                    Programming and Data Structures</em></a></td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <h3>Colorado School of Mines | Golden, CO</h3>
-        <ul>
-            <li>Bachelor of Science in Geophysical Engineering</li>
-            <li>Minor in Computational and Applied Mathematics</li>
-            <li>Area of Special Interest in Space and Planetary Science and Engineering</li>
-        </ul>
-    </section>
-    <script src="script.js"></script>
+            <h3>Colorado School of Mines | Golden, CO</h3>
+            <ul>
+                <li>Bachelor of Science in Geophysical Engineering</li>
+                <li>Minor in Computational and Applied Mathematics</li>
+                <li>Area of Special Interest in Space and Planetary Science and Engineering</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2>Side Projects</h2>
+            <h3>Compass (2023)</h3>
+            <a target="_blank" href="https://compass.nad27.net">Compass</a>
+            <p>
+                A simple compass application that exposed the navigation API to display your direction, speed, and
+                location. JavaScript, CSS, HTML.
+            </p>
+            <h3>radio (2022)</h3>
+            <a target="_blank" href="https://radio.nad27.net">radio</a>
+            <p>
+                An application for playing music in the browser. Working on IPFS integration. React, JavaScript, CSS,
+                HTML.
+            </p>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>

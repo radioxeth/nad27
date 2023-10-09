@@ -1,11 +1,6 @@
-const menuToggle = document.getElementById("mobile-menu");
-const navList = document.querySelector(".nav-list");
-
-menuToggle.addEventListener("click", () => {
-    navList.classList.toggle("active");
-    if (navList.style.display === "none" || navList.style.display === "") {
-        navList.style.display = "block";
-    } else {
-        navList.style.display = "none";
-    }
-});
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('hidden');
+    const hamburgerMenu = document.querySelector('.hamburger-menu')
+    hamburgerMenu.classList.toggle('open')
+}
